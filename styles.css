@@ -43,6 +43,17 @@ section {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+    /* Animation start state */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+/* Animation active state */
+section.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Section titles */
@@ -86,3 +97,4 @@ footer {
         padding: 1rem;
     }
 }
+
