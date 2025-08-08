@@ -1,35 +1,88 @@
-body {
-    font-family: system-ui,Segoe UI,Arial;
+/* General Reset */
+* {
     margin: 0;
-    padding: 1rem;
-    max-width: 900px
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body with cool blue gradient background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-h1 {
-    margin: 0
+header h1 {
+    font-size: 2.5rem;
+    color: #e0f4ff;
 }
 
+header p {
+    font-size: 1.1rem;
+    color: #a8d8f0;
+}
+
+/* Sections with matte glassy style */
 section {
-    margin-bottom: 1.2rem
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-article {
-    padding: 0.5rem 0;
-    border-bottom: 1px dashed #eee
+/* Section titles */
+section h2 {
+    color: #a8d8f0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.5rem;
 }
 
+/* Links */
 a {
-    color: blue
+    color: #66cfff;
+    text-decoration: none;
+    font-weight: 500;
 }
 
+a:hover {
+    color: #a8d8f0;
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
-    color: #666;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
     font-size: 0.9rem;
-    margin-top: 2rem
+    color: #a8d8f0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    section {
+        margin: 1rem;
+        padding: 1rem;
+    }
 }
