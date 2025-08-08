@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="stagger">
         <h1>Emmanuel Muhoro</h1>
         <p>Junior C# / ASP.NET Developer — building small apps & APIs</p>
     </header>
 
-    <section id="projects">
+    <section id="projects" class="stagger">
         <h2>Projects</h2>
         <article>
             <h3>Inventory Console App</h3>
             <p>Simple C# console app that manages products saved as JSON.</p>
             <p><a href="https://github.com/emman-305/InventoryApp" target="_blank">GitHub repo</a></p>
-            <p><a href="https://github.com/emman-305/emman-305.github.io/releases/download/v1.0/InventoryApp.zip" target="_blank" class="cta-button">Try the Inventory App</a></p>
+            <p><a href="https://github.com/emman-305/emman-305.github.io/releases/download/v1.0/InventoryApp.zip" target="_blank" class="inventory-btn">Try the Inventory App</a></p>
         </article>
 
         <!--<article>
@@ -30,12 +30,12 @@
         >
     </section>
 
-    <section id="about">
+    <section id="about" class="stagger">
         <h2>About</h2>
         <p>I am an IT graduate from Kirinyaga University on my journey to full stack web development, Learning full-stack ASP.NET Core, C#, SQL, JS basics.”</p>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="stagger">
         <h2>Contact me @ +254796062609</h2>
         <p>Email: <a href="mailto:marnuh305@gmail.com">marnuh 305</a></p>
         <!--<p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">yourprofile</a></p>-->
@@ -46,7 +46,7 @@
     <script>document.getElementById('date').textContent = new Date().toLocaleDateString();</script>
     <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section");
+    const sections = document.querySelectorAll("stagger");
 
     function checkScroll() {
         const triggerBottom = window.innerHeight * 0.85;
