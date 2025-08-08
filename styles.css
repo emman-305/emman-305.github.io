@@ -247,4 +247,21 @@ nav ul li a:active {
     transform: translateY(-2px);
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.25);
 }
+.email-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #4a90e2, #357ABD);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
 
+.email-btn:hover {
+    background: linear-gradient(135deg, #5aa0f2, #468DD8);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
