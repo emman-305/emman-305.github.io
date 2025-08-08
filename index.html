@@ -43,5 +43,23 @@
     <footer>Built with C# practice projects • Updated: <span id="date"></span></footer>
 
     <script>document.getElementById('date').textContent = new Date().toLocaleDateString();</script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+
+    function checkScroll() {
+        const triggerBottom = window.innerHeight * 0.85;
+        sections.forEach(sec => {
+            const boxTop = sec.getBoundingClientRect().top;
+            if (boxTop < triggerBottom) {
+                sec.classList.add("show");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", checkScroll);
+    checkScroll(); // run on page load
+});
+</script>
 </body>
 </html>
