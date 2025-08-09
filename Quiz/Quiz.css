@@ -1,0 +1,85 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #0d1b2a, #1b263b);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.glass-header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.quiz-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.glass-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn-pill {
+    background: #4da8da;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+    .btn-pill:hover {
+        background: #0077b6;
+    }
+
+.answer-btn {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    text-align: left;
+}
+
+    .answer-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+.hidden {
+    display: none;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
