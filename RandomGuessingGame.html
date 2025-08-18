@@ -43,7 +43,7 @@
 <body>
 
 <div class="game">
-  <h2>🎲 Number Guessing Game</h2>
+  <h2> Number Guessing Game</h2>
   <p>Guess a number between 1 and 10. Enter 0 to quit.</p>
   
   <input type="number" id="guess" placeholder="Enter your guess">
@@ -63,28 +63,28 @@ function playGame() {
   input.value = ""; // clear input box
 
   if (isNaN(guess)) {
-    resultDiv.innerText = "❌ Invalid input! Please enter a number.";
-    return; // like 'continue' → just skip the rest
+    resultDiv.innerText = " Invalid input! Please enter a number.";
+    return; // like 'continue'  just skip the rest
   }
 
   if (guess === 0) {
-    resultDiv.innerText = "👋 You chose to quit. Goodbye!";
+    resultDiv.innerText = "You chose to quit. Goodbye!";
     return; // stop game
   }
 
   attempts++;
 
   if (guess < 1 || guess > 10) {
-    resultDiv.innerText = "⚠️ Please guess within the range 1–10.";
+    resultDiv.innerText = " Please guess within the range 1–10.";
     return;
   }
 
   if (guess === secret) {
-    resultDiv.innerText = `🎉 Correct! You guessed it in ${attempts} attempts.`;
+    resultDiv.innerText = ` Correct! You guessed it in ${attempts} attempts.`;
   } else if (guess < secret) {
-    resultDiv.innerText = "⬇️ Too low! Try again.";
+    resultDiv.innerText = " Too low! Try again.";
   } else {
-    resultDiv.innerText = "⬆️ Too high! Try again.";
+    resultDiv.innerText = " Too high! Try again.";
   }
 }
 </script>
